@@ -1,0 +1,19 @@
+field.formatter.settings.media_download_all_entity_view:
+  type: field.formatter.settings.entity_reference_entity_view
+  label: 'Entity reference rendered entity display format settings (MDA)'
+
+field.formatter.settings.media_download_all_entity_id:
+  type: mapping
+  label: 'Entity reference entity ID display format settings (MDA)'
+
+field.formatter.settings.media_download_all_label:
+  type: mapping
+  label: 'Entity reference label display format settings (MDA)'
+  mapping:
+    link:
+      type: boolean
+      label: 'Link label to the referenced entity'
+
+field.formatter.settings.media_download_all_thumbnail:
+  type: field.formatter.settings.image
+  label: 'Media thumbnail field display format settings (MDA)'

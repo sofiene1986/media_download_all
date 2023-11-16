@@ -1,0 +1,6 @@
+services:
+  media_download_all.cache_tags_invalidator:
+    class: Drupal\media_download_all\Cache\MdaCacheTagsInvalidator
+    arguments: ['@cache.default', '@entity_type.manager']
+    tags:
+      - { name: cache_tags_invalidator, priority: 100 }
